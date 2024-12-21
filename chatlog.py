@@ -5,12 +5,12 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import ChatAdminRequired, RPCError
 from typing import Union
-
+from Config import API_ID, API_HASH, BOT_TOKEN, LOG_GROUP_ID, STRING_SESSION
 # Logging configuration
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# config variables
+# Config variables
 API_ID = int(getenv("API_ID", "0"))
 API_HASH = getenv("API_HASH", "0")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
