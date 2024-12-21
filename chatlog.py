@@ -7,9 +7,9 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import ChatAdminRequired, RPCError
 from typing import Union
 import asyncio
-from config import LOG_GROUP_ID as LOGGER_ID
+from Config import LOG_GROUP_ID as LOGGER_ID
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002018556839"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002043570167"))
 
 photo = [
     "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
