@@ -471,7 +471,7 @@ async def start_message_private(client, message):
                     ),
                     InlineKeyboardButton(
                         text="˹ ʀᴇᴘᴏ ˼",
-                        url="https://github.com/TEAM-ISTKHAR/MUSARRAT",  # Callback data for Owner button
+                        url="https://github.com/TEAM-ISTKHAR/ISTKHARX",  # Callback data for Owner button
                     ),
                 ]
             ]
@@ -530,7 +530,7 @@ async def back_to_home_menu(client, query):
                 ),
                 InlineKeyboardButton(
                     text="˹ ʀᴇᴘᴏ ˼",
-                    url="https://github.com/TEAM-ISTKHAR/MUSARRAT",  # Callback data for Owner button
+                    url="https://github.com/TEAM-ISTKHAR/ISTKHARX",  # Callback data for Owner button
                 ),
             ]
         ]
