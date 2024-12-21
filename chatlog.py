@@ -1,16 +1,23 @@
 import os
 import random
 import logging
-from os import getenv
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import ChatAdminRequired, RPCError
 from typing import Union
-import asyncio
-from Config import LOG_GROUP_ID as LOGGER_ID
 
+# Logging configuration
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# config variables
+API_ID = int(getenv("API_ID", "0"))
+API_HASH = getenv("API_HASH", "0")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
+STRING_SESSION = getenv("STRING_SESSION", "")
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002043570167"))
 
+# List of photos
 photo = [
     "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
     "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
@@ -19,13 +26,12 @@ photo = [
     "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
 ]
 
-## all clients
-
+# Initialize Pyrogram clients
 app = Client(
     name="App",
     api_id=API_ID,
     api_hash=API_HASH,
-    session_string=str(STRING_SESSION),
+    session_string=STRING_SESSION,
 )
 
 bot = Client(
@@ -55,7 +61,7 @@ async def join_watcher(client: Client, message: Message):
                     f"🤔 ᴀᴅᴅᴇᴅ ʙʏ: {message.from_user.mention}"
                 )
                 await client.send_photo(
-                    LOGGER_ID,
+                    LOG_GROUP_ID,
                     photo=random.choice(photo),
                     caption=msg,
                     reply_markup=InlineKeyboardMarkup([
@@ -63,7 +69,7 @@ async def join_watcher(client: Client, message: Message):
                     ])
                 )
     except RPCError as e:
-        logging.error(f"Error in join_watcher: {e}")
+        logger.error(f"Error in join_watcher: {e}")
 
 # Handler for when the bot leaves a chat
 @bot.on_message(filters.left_chat_member)
@@ -83,10 +89,10 @@ async def on_left_chat_member(client: Client, message: Message):
                 f"🗑️ ʙᴏᴛ: @{bot_username}"
             )
             await client.send_photo(
-                LOGGER_ID,
+                LOG_GROUP_ID,
                 photo=random.choice(photo),
                 caption=left_msg
             )
     except RPCError as e:
-        logging.error(f"Error in on_left_chat_member: {e}")
+        logger.error(f"Error in on_left_chat_member: {e}")
 
