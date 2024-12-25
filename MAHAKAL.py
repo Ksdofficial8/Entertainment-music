@@ -72,7 +72,7 @@ logging.getLogger("httpx").setLevel(logging.ERROR)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("pytgcalls").setLevel(logging.ERROR)
 
-LOGGER = logging.getLogger("ISTKHAR")
+LOGGER = logging.getLogger("KOUSHAL")
 
 
 # config variables
@@ -81,7 +81,7 @@ if os.path.exists("Config.env"):
 
 
 API_ID = int(getenv("API_ID", "26598255"))
-API_HASH = getenv("API_HASH", "2851fb6ab1bdcd0fcaf768dfcb923ffb")
+API_HASH = getenv("API_HASH", "3030874d0befdb5d05597deacc3e83ab")
 BOT_TOKEN = getenv("BOT_TOKEN", "7341956587:AAEq3IeuEBtPX48ar5iBbU26mYAwfC6wMl0")
 STRING_SESSION = getenv("STRING_SESSION", "BQGV228ACV8QkqqOPePVWjymPlMQa70ISY-ZH4UKxNRi-wsV7nLeNum4mHf5E4moYwdAJ8QBCP6DgJ1XGfdA-J86nsBjgBcTIvBYwaUF0nC0IcqTtjQwZb14H_YCAKzYUyA3HbUP8kESK8cIAJh1w6T-KorFff_WmVECStrrM-Hu8K24Zbg--p4FqNac1lUsjOaQsZP1OX2sU46CDJvg74k-s-3B8-xOd0HRYDo57j4rcv-UgB_OXOSi2-exw-Ma-CaDQrxpnzaHh-DhFN1y04-Bc4-5bukKQoTKJ29oEf9DSjpwFsSPB00u7ekXMobWZjQfxa17_6Kro_AgpzrzO1dS7xqvRAAAAAF7cTpGAA")
 MONGO_DB_URL = getenv("MONGO_DB_URL", "mongodb+srv://Yash_607:Yash_607@cluster0.r3s9sbo.mongodb.net/?retryWrites=true&w=majority")
@@ -386,8 +386,7 @@ HELP_C = """```
 
 ⌬ ᴍᴏʀᴇ ɪɴғᴏ. [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/RIYA_NETWORK)**"""
 
-HELP_X = """```
-    【◖ 𝐓ʜᴜɴᴅᴇʀ ◗ 】 🇮🇳 ᴍᴇɴᴜ```
+HELP_X = """˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼
 **ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /**
 ␥ /play - Pʟᴀʏ ʏᴏᴜʀ ғᴀᴠᴏʀɪᴛᴇ sᴏɴɢ [ᴀᴜɪᴅᴏ].
 
@@ -404,11 +403,11 @@ HELP_X = """```
 V ɪ s ɪ ᴛ - [ʜᴇʀᴇ](https://t.me/RIYA_NETWORK)"""
 
 # Callback query handler
-@bot.on_callback_query(filters.regex("ISTKHAR_ALAM"))
+@bot.on_callback_query(filters.regex("HUNTER_XD"))
 async def helper_cb(client, CallbackQuery):
     await CallbackQuery.edit_message_text(HELP_X, reply_markup=ABUTTON)
 
-@bot.on_callback_query(filters.regex("MUSARRAT"))
+@bot.on_callback_query(filters.regex("MAHAKAL"))
 async def helper_cb(client, CallbackQuery):
     await CallbackQuery.edit_message_text(HELP_C, reply_markup=CBUTTON)
 
@@ -462,17 +461,17 @@ async def start_message_private(client, message):
                     ),
                     InlineKeyboardButton(
                         text="˹ ʜᴇʟᴘ ˼",
-                        callback_data="ISTKHAR_ALAM",
+                        callback_data="HUNTER_XD",
                     ),
                 ],
                 [
                     InlineKeyboardButton(
                         text="˹ ᴧʙᴏᴜᴛ ˼",
-                        callback_data="MUSARRAT",
+                        callback_data="MAHAKAL",
                     ),
                     InlineKeyboardButton(
                         text="˹ ʀᴇᴘᴏ ˼",
-                        url="https://github.com/TEAM-ISTKHAR/ISTKHARX",  # Callback data for Owner button
+                        url="https://github.com/TEAM-KOUSHAL/KOUSHALX",  # Callback data for Owner button
                     ),
                 ]
             ]
@@ -521,17 +520,17 @@ async def back_to_home_menu(client, query):
                 ),
                 InlineKeyboardButton(
                     text="˹ ʜᴇʟᴘ ˼",
-                    callback_data="ISTKHAR_ALAM",
+                    callback_data="HUNTER_XD",
                 ),
             ],
             [
                 InlineKeyboardButton(
                     text="˹ ᴧʙᴏᴜᴛ ˼",
-                    callback_data="MUSARRAT",
+                    callback_data="MAHAKAL",
                 ),
                 InlineKeyboardButton(
                     text="˹ ʀᴇᴘᴏ ˼",
-                    url="https://github.com/TEAM-ISTKHAR/ISTKHARX",  # Callback data for Owner button
+                    url="https://github.com/TEAM-KOUSHAL/KOUSHALX",  # Callback data for Owner button
                 ),
             ]
         ]
@@ -887,7 +886,7 @@ async def change_stream(chat_id):
 
     await call.play(chat_id, stream_media, config=call_config)
     await add_active_media_chat(chat_id, stream_type)
-    caption = f"""```\n🔊<b>˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ [тҽαɱ ɾιყα](https://t.me/riya_network)"""
+    caption = f"""\n🔊<b>˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ [тҽαɱ ɾιყα](https://t.me/riya_network)"""
     buttons = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -1107,7 +1106,7 @@ async def stream_audio_or_video(client, message):
                 position = await add_to_queue(
                     chat_id, user, title, duration, stream_file, stream_type, thumbnail
                 )
-                caption = f"""```\n🔊 Aᴅᴅᴇᴅ {position} ǫᴜᴇᴜᴇ```\n␥ ʜᴇʏ {requested_by}\n␥ ʏᴏᴜʀ sᴏɴɢ {title}\n␥ ᴘʟᴀʏ ᴀғᴛᴇʀ {position} sᴏɴɢ.```\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ тҽαɱ ɾιყα"""
+                caption = f"""\n🔊 Aᴅᴅᴇᴅ {position} ǫᴜᴇᴜᴇ\n␥ ʜᴇʏ {requested_by}\n␥ ʏᴏᴜʀ sᴏɴɢ {title}\n␥ ᴘʟᴀʏ ᴀғᴛᴇʀ {position} sᴏɴɢ.\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ тҽαɱ ɾιყα"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail, position
@@ -1209,7 +1208,7 @@ async def stream_audio_or_video(client, message):
                 position = await add_to_queue(
                     chat_id, user, title, duration, stream_file, stream_type, thumbnail
                 )
-                caption = f"""```\n🔊<b>[˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼](https://t.me/sommusic7_bot)```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ [˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼](https://t.me/sommusic7_bot)```"""
+                caption = f"""\n🔊<b>[˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼](https://t.me/sommusic7_bot)\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ [˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼](https://t.me/sommusic7_bot)"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail
@@ -1434,7 +1433,7 @@ async def update_repo_latest(client, message):
     except InvalidGitRepositoryError:
         return await response.edit("Invalid Git Repsitory")
     to_exc = f"git fetch origin aditya &> /dev/null"
-    os.ISTKHAR(to_exc)
+    os.KOUSHAL(to_exc)
     await asyncio.sleep(7)
     verification = ""
     REPO_ = repo.remotes.origin.url.split(".git")[0]  # main git repository
@@ -1459,12 +1458,12 @@ async def update_repo_latest(client, message):
         )
     else:
         nrs = await response.edit(_final_updates_, disable_web_page_preview=True)
-    os.ISTKHAR("git stash &> /dev/null && git pull")
+    os.KOUSHAL("git stash &> /dev/null && git pull")
     await response.edit(
         f"{nrs.text}\n\nBot was updated successfully! Now, wait for 1 - 2 mins until the bot reboots!"
     )
-    os.ISTKHAR("pip3 install -r requirements.txt --force-reinstall")
-    os.ISTKHAR(f"kill -9 {os.getpid()} && python3 -m AdityaHalder")
+    os.KOUSHAL("pip3 install -r requirements.txt --force-reinstall")
+    os.KOUSHAL(f"kill -9 {os.getpid()} && python3 -m AdityaHalder")
     sys.exit()
     return
 
@@ -1520,7 +1519,7 @@ async def check_total_stats(client, query):
         video_chats = len(ACTIVE_VIDEO_CHATS)
         
         return await query.answer(
-            f"""🏹 Bᴏᴛ Rᴜɴ Tɪᴍᴇ [◖ ᴛʜᴜɴᴅᴇʀ ◗]
+            f"""🏹 Bᴏᴛ Rᴜɴ Tɪᴍᴇ ˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼
 ⎋ {uptime}
 
 ➥ Sᴇʀᴠᴇᴅ Cʜᴀᴛs: {served_chats}
