@@ -207,8 +207,8 @@ async def main():
         LOGGER.info(f"🚫 Assistant Error: {e}")
         sys.exit()
     try:
-        await app.join_chat("THUNDERDEVS")
-        await app.join_chat("CRAZY_OP_02")
+        await app.join_chat("riya_network")
+        await app.join_chat("RIYA_CHAT_SUPPORT")
     except Exception:
         pass
     if LOG_GROUP_ID != 0:
@@ -225,7 +225,7 @@ async def main():
     LOGGER.info("✅ PyTgCalls Started.")
     await asyncio.sleep(1)
     LOGGER.info("✅ Sucessfully Hosted Your Bot !!")
-    LOGGER.info("✅ Now Do Visit: @THUNDERDEVS !!")
+    LOGGER.info("✅ Now Do Visit: @riya_network !!")
     await idle()
 
 
@@ -343,10 +343,10 @@ async def add_served_user(user_id: int):
 CBUTTON = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/CRAZY_OP_02")
+            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/RIYA_CHAT_SUPPORT")
         ],
         [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/THUNDERDEVS"),
+            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/riya_network"),
             InlineKeyboardButton("˹ ᴧʟʟ ʙᴏᴛ ˼", url="https://t.me/ll_THUNDER_lll")
         ],
         [
@@ -368,7 +368,7 @@ ABUTTON = InlineKeyboardMarkup(
 HELP_C = """```
 ⌬ ๏ ʟᴇᴛ's ɪɴᴛʀᴏᴅᴜᴄᴇ ᴍᴜsɪᴄ ʙᴏᴛ```
 
-**⌬ [【◖ 𝐓ʜᴜɴᴅᴇʀ ◗ 】 🇮🇳](https://t.me/THUNDERDEVS) ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ**
+**⌬ [˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼𓆩♡𓆪⁩](https://t.me/sommusic7_bot) ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ**
 ```\n⌬ ʙᴇsᴛ ғᴇᴀsɪʙɪʟɪᴛʏ ᴏɴ ᴛᴏᴘ  ?```
 
 **␥ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ
@@ -383,7 +383,7 @@ HELP_C = """```
 
 ᴀʟʟ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs ᴀʀᴇ ᴡᴏʀᴋɪɴɢ ғɪɴᴇ
 
-⌬ ᴍᴏʀᴇ ɪɴғᴏ. [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/THUNDERDEVS)**"""
+⌬ ᴍᴏʀᴇ ɪɴғᴏ. [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/RIYA_NETWORK)**"""
 
 HELP_X = """```
     【◖ 𝐓ʜᴜɴᴅᴇʀ ◗ 】 🇮🇳 ᴍᴇɴᴜ```
@@ -400,7 +400,7 @@ HELP_X = """```
 
 ␥ /end - Cʟᴇᴀʀ , ᴇɴᴅ ᴀʟʟ sᴏɴɢ [ᴀᴜɪᴅᴏ & ᴠɪᴅᴇᴏ]
 
-V ɪ s ɪ ᴛ - [ʜᴇʀᴇ](https://t.me/THUNDERDEVS)"""
+V ɪ s ɪ ᴛ - [ʜᴇʀᴇ](https://t.me/RIYA_NETWORK)"""
 
 # Callback query handler
 @bot.on_callback_query(filters.regex("ISTKHAR_ALAM"))
@@ -440,11 +440,11 @@ async def start_message_private(client, message):
             await asyncio.sleep(0.005)  # Adjust speed of progress here
 
         # After progress bar reaches 100%, send final message and delete it
-        await baby.edit_text("**❖ ᴛʜᴜɴᴅᴇʀ ᴏᴘ  🇮🇳...**")
+        await baby.edit_text("**JAY BAJARANG BALI 🚩.**")
         await asyncio.sleep(1)  # Wait for 2 seconds before deletion
         await baby.delete()
 
-        caption = f"""❖ ᴛʜɪs ɪs ˹ ᴛʜᴜɴᴅᴇʀ ꭙ мυѕιᴄ ˼ 🎶 ! \n\n━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━\n❖ ᴛʜɪs ɪs ϻɪɴɪ | ϻυsɪᴄ ʙσᴛ\n❖ ησ ʟᴧɢ | ᴧᴅs ϻυsɪᴄ | ησ ᴘʀσϻσ\n❖ 24x7 ʀυη | ʙєsᴛ sσυηᴅ ǫυᴧʟɪᴛʏ\n━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━\n❖ ᴄʟɪᴄᴋ ση ᴛʜє ᴄᴏᴍᴍᴀɴᴅ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ\n    ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!\n━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━"""
+        caption = f"""╭───────────────────⦿\n│❍  ɪ ᴀᴍ ˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼𓆩♡𓆪⁩ \n├───────────────────⦿\n│❍ ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs \n├───────────────────⦿\n│❍  ᴀ ғᴀsᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ\n│  ʙᴏᴛ ᴡɪᴛʜ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs\n│❍ l ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ \n│❍  ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ᴍᴜsɪᴄ sᴏᴜɴᴅ \n│❍  ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs \n│❍  24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ \n├───────────────────⦿\n│❍ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ\n│   ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs\n│❍ 𝖯ᴏᴡᴇʀᴇᴅ 𝖡ʏ » <a href=t.me/RIYA_network>тҽαɱ ɾιყα</a></b>\n<b>╰───────────────────⦿"""
 
         buttons = InlineKeyboardMarkup(
             inline_keyboard=[
@@ -504,7 +504,7 @@ async def start_message_private(client, message):
 @bot.on_callback_query(filters.regex("back_to_home"))
 async def back_to_home_menu(client, query):
     mention = query.from_user.mention
-    caption = f"""❖ ᴛʜɪs ɪs ˹ ᴛʜᴜɴᴅᴇʀ ꭙ мυѕιᴄ ˼ 🎶 ! \n\n━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━\n❖ ᴛʜɪs ɪs ϻɪɴɪ | ϻυsɪᴄ ʙσᴛ\n❖ ησ ʟᴧɢ | ᴧᴅs ϻυsɪᴄ | ησ ᴘʀσϻσ\n❖ 24x7 ʀυη | ʙєsᴛ sσυηᴅ ǫυᴧʟɪᴛʏ\n━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━\n❖ ᴄʟɪᴄᴋ ση ᴛʜє ᴄᴏᴍᴍᴀɴᴅ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ\n    ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!\n━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━"""
+    caption = f"""╭───────────────────⦿\n│❍  ɪ ᴀᴍ ˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼𓆩♡𓆪⁩ \n├───────────────────⦿\n│❍ ɪ ʜᴀᴠᴇ sᴘᴇᴄɪᴀʟ ғᴇᴀᴛᴜʀᴇs \n├───────────────────⦿\n│❍  ᴀ ғᴀsᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ\n│  ʙᴏᴛ ᴡɪᴛʜ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs\n│❍ l ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ \n│❍  ʙᴇsᴛ ǫᴜɪʟɪᴛʏ ᴍᴜsɪᴄ sᴏᴜɴᴅ \n│❍  ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs \n│❍  24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ \n├───────────────────⦿\n│❍ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ\n│   ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs\n│❍ 𝖯ᴏᴡᴇʀᴇᴅ 𝖡ʏ » <a href=t.me/RIYA_network>тҽαɱ ɾιყα</a></b>\n<b>╰───────────────────⦿"""
     buttons = InlineKeyboardMarkup(
         inline_keyboard=[
             [
@@ -886,15 +886,15 @@ async def change_stream(chat_id):
 
     await call.play(chat_id, stream_media, config=call_config)
     await add_active_media_chat(chat_id, stream_type)
-    caption = f"""```\n🔊<b>【◖ ᴛʜᴜɴᴅᴇʀ ◗ 】🚩•```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ˹ ᴛʜᴜɴᴅᴇʀ-ᴍᴜsɪᴄ™˼```"""
+    caption = f"""```\n🔊<b>˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼𓆩♡𓆪⁩```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ [тҽαɱ ɾιყα](https://t.me/riya_network)"""
     buttons = InlineKeyboardMarkup(
     inline_keyboard=[
         [
             InlineKeyboardButton(
-                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/THUNDERDEVS"
+                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/riya_network"
             ),
             InlineKeyboardButton(
-                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/CRAZY_OP_02"
+                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/RIYA_CHAT_SUPPORT"
             )
         ],
         [
@@ -992,10 +992,10 @@ async def stream_audio_or_video(client, message):
     inline_keyboard=[
         [
             InlineKeyboardButton(
-                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/THUNDERDEVS"
+                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/riya_network"
             ),
             InlineKeyboardButton(
-                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/CRAZY_OP_02"
+                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/RIYA_CHAT_SUPPORT"
             )
         ],
         [
@@ -1071,10 +1071,10 @@ async def stream_audio_or_video(client, message):
     inline_keyboard=[
         [
             InlineKeyboardButton(
-                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/THUNDERDEVS"
+                text="˹ ᴜᴘᴅᴀᴛᴇ ˼", url="https://t.me/riya_network"
             ),
             InlineKeyboardButton(
-                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/CRAZY_OP_02"
+                text="˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/RIYA_CHAT_SUPPORT"
             )
         ],
         [
@@ -1106,7 +1106,7 @@ async def stream_audio_or_video(client, message):
                 position = await add_to_queue(
                     chat_id, user, title, duration, stream_file, stream_type, thumbnail
                 )
-                caption = f"""```\n🔊 Aᴅᴅᴇᴅ {position} ǫᴜᴇᴜᴇ```\n␥ ʜᴇʏ {requested_by}\n␥ ʏᴏᴜʀ sᴏɴɢ {title}\n␥ ᴘʟᴀʏ ᴀғᴛᴇʀ {position} sᴏɴɢ.```\n⏤͟͟͞͞★ ᴛʜᴜɴᴅᴇʀ ᴍᴜsɪᴄ 💗```"""
+                caption = f"""```\n🔊 Aᴅᴅᴇᴅ {position} ǫᴜᴇᴜᴇ```\n␥ ʜᴇʏ {requested_by}\n␥ ʏᴏᴜʀ sᴏɴɢ {title}\n␥ ᴘʟᴀʏ ᴀғᴛᴇʀ {position} sᴏɴɢ.```\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ тҽαɱ ɾιყα"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail, position
@@ -1208,7 +1208,7 @@ async def stream_audio_or_video(client, message):
                 position = await add_to_queue(
                     chat_id, user, title, duration, stream_file, stream_type, thumbnail
                 )
-                caption = f"""```\n🔊<b>【◖ ᴛʜᴜɴᴅᴇʀ ◗ 】🇮🇳•```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\nᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ ˹ ᴛᴜɴᴅᴇʀ-ᴍᴜsɪᴄ™˼```"""
+                caption = f"""```\n🔊<b>[˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼𓆩♡𓆪⁩](https://t.me/sommusic7_bot)```\n<b>␥ ʟʏʀɪᴄ •</b> {title}\n<b>␥ ᴛɪᴍᴇ •</b> {duration} ᴍɪɴᴜᴛᴇs\n<b>␥ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ •</b> {requested_by}```\n❖ ᴘᴏᴡᴇʀᴇᴅ  ➥ [˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼𓆩♡𓆪⁩](https://t.me/sommusic7_bot)```"""
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
                     chat_id, user, title, duration, stream_type, thumbnail
@@ -1398,11 +1398,11 @@ async def git_repo_link(client, message):
         [
             InlineKeyboardButton(
                 text="˹ sᴜᴘᴘᴏꝛᴛ ˼",
-                url="https://t.me/CRAZY_OP_02"
+                url="https://t.me/RIYA_CHAT_SUPPORT"
             ),
             InlineKeyboardButton(
                 text="˹ sᴏᴜꝛᴄᴇ ˼",
-                url="https://github.com/TEAM-ISTKHAR/MUSARRAT"
+                url="https://github.com/Ksdofficial8/Entertainment-music"
             ),
         ],
         [
@@ -1476,8 +1476,8 @@ async def git_repo_link(client, message):
         mention = message.from_user.mention
     if message.chat.type == ChatType.PRIVATE:
         caption = f"""```
-◖ Sαηαтαηι ◗ Sᴛᴀᴛs```
-➠ Sᴛᴀᴛs ᴏғ sᴀɴᴀᴛᴀɴɪ ᴠɪʙᴇs"""
+˹ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ˼𓆩♡𓆪⁩ Sᴛᴀᴛs```
+➠ Sᴛᴀᴛs ᴏғ ɴɪᴋᴋɪ ꭙ ᴍᴜsɪᴄ⁩"""
     else:
         caption = f"** Hᴇʟʟᴏ, {mention}.**"
     buttons = InlineKeyboardMarkup(
