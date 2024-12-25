@@ -1,6 +1,7 @@
 import aiohttp, aiofiles, asyncio, base64, logging
 import os, platform, random, re, socket
 import sys, time, textwrap
+import filters
 
 from os import getenv
 import asyncio
@@ -19,7 +20,6 @@ from motor.motor_asyncio import AsyncIOMotorClient as _mongo_async_
 from pyrogram import filters
 from pyrogram import Client, filters as pyrofl
 from pytgcalls import PyTgCalls, filters as pytgfl
-from pytgcalls import filters, filters as pytgfl
 
 
 from pyrogram import idle, __version__ as pyro_version
