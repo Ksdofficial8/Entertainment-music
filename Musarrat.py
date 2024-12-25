@@ -82,7 +82,7 @@ if os.path.exists("Config.env"):
 
 API_ID = int(getenv("API_ID", "26598255"))
 API_HASH = getenv("API_HASH", "3030874d0befdb5d05597deacc3e83ab")
-BOT_TOKEN = getenv("BOT_TOKEN", "7341956587:AAEq3IeuEBtPX48ar5iBbU26mYAwfC6wMl0")
+BOT_TOKEN = getenv("BOT_TOKEN", "7341956587:7341956587:AAEExbpr-U69Ncb6Pvp4guz-bNFgBMQtoME")
 STRING_SESSION = getenv("STRING_SESSION", "BQGV228ACV8QkqqOPePVWjymPlMQa70ISY-ZH4UKxNRi-wsV7nLeNum4mHf5E4moYwdAJ8QBCP6DgJ1XGfdA-J86nsBjgBcTIvBYwaUF0nC0IcqTtjQwZb14H_YCAKzYUyA3HbUP8kESK8cIAJh1w6T-KorFff_WmVECStrrM-Hu8K24Zbg--p4FqNac1lUsjOaQsZP1OX2sU46CDJvg74k-s-3B8-xOd0HRYDo57j4rcv-UgB_OXOSi2-exw-Ma-CaDQrxpnzaHh-DhFN1y04-Bc4-5bukKQoTKJ29oEf9DSjpwFsSPB00u7ekXMobWZjQfxa17_6Kro_AgpzrzO1dS7xqvRAAAAAF7cTpGAA")
 MONGO_DB_URL = getenv("MONGO_DB_URL", "mongodb+srv://Yash_607:Yash_607@cluster0.r3s9sbo.mongodb.net/?retryWrites=true&w=majority")
 OWNER_ID = int(getenv("OWNER_ID", "8009369344"))
